@@ -1,0 +1,361 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\title{Home assignment 1}
+\author{Jonas Borgström, Mohamad Alshalabi,Peter Thuresson}
+\date{September 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 32 In Chapter 2.}
+
+The answer for all sub questions involve applying portioning for the random vector X. 
+The variance-covaraince matrix is listed below. 
+\newline 
+ 
+
+ $\Sigma_x$= $\left[
+\begin{array}{cc|ccc}
+4 & -1 & 1/2 & -1/2 & 0\\
+-1 & 3 & 1 & -1 & 0\\ \hline
+1/2 & 1 & 6 & 1 & -1\\ 
+-1/2 & -1 & 1 & 4 & 0\\ 
+0 & 0 & -1 & 0 & 2
+\end{array}
+\right]
+$\newline
+This matrix includes the partitioned variance-covariance matrix.\newline 
+This matrix is the same matrix 
+$\Sigma_x$ =$\left[
+\begin{array}{cc}
+\Sigma_{11} & \Sigma_{12} \\
+\Sigma_{21} & \Sigma_{22}
+\end{array}
+\right]$
+similarly, the mean vector is partitioned the same manners.\newline 
+$\mu$ = $\left[
+\begin{array}{c}
+2\\
+4\\ \hline
+-1\\
+3\\
+0
+\end{array}
+\right]
+$\newline
+\subsection{(a-2-32)}
+Find E($X^{[1]} $) = $\mu^ {[1] }$ = $\left[
+\begin{array}{c}
+2\\
+4
+\end{array}
+\right]
+$\newline
+\subsection{(b-2-32)}
+Find  E($A*X^{[1]} $) = $A*\mu^{[1]}$ = $\left[
+\begin{array}{cc}
+1 & -1 \\
+1 & 1
+\end{array}
+\right]
+$*$\left[
+\begin{array}{c}
+2\\
+4
+\end{array}
+\right]
+$ = $\left[
+\begin{array}{c}
+-2\\
+6
+\end{array}
+\right]
+$\newline
+\subsection{(c-2-32)}
+Find Cov($X^{[1]}$) = $\Sigma_{11}$ = $\left[ 
+\begin{array}{cc}
+    4 & -1 \\
+    -1 & 3
+\end{array}
+\right]$\newline
+\subsection{(d-2-32)}
+Find Cov($A*X^{[1]}$) = $A'$ *  $\Sigma_{11}$ * $A$ = $\left[
+\begin{array}{cc}
+1 & 1 \\
+-1 & 1
+\end{array}
+\right]
+$*$\left[ 
+\begin{array}{cc}
+4 & -1 \\
+-1 & 3
+\end{array}
+\right]$* $\left[
+\begin{array}{cc}
+1 & -1 \\
+1 & 1
+\end{array}
+\right]
+$ = $\left[ 
+\begin{array}{cc}
+9 & 1 \\
+1 & 5
+\end{array}
+\right]$\newline
+\subsection{(e-2-32)}
+Find E($X^{[2]} $) = $\mu^ {[2] }$ = $\left[
+\begin{array}{c}
+-1\\
+3\\
+0
+\end{array}
+\right]
+$\newline
+\subsection{(f-2-32)}
+Find  E($B*X^{[2]} $) = $B*\mu^{[2]}$ = $\left[
+\begin{array}{ccc}
+1 & 1 &1 \\
+1 & 1 &-2
+\end{array}
+\right]
+$*$\left[
+\begin{array}{c}
+-1\\
+3\\
+0
+\end{array}
+\right]
+$ = $\left[
+\begin{array}{c}
+2\\
+2
+\end{array}
+\right]
+$\newline
+\subsection{(g-2-32)}
+Find Cov($X^{[2]}$) = $\Sigma_{22}$ = $\left[ 
+\begin{array}{ccc}
+6 & 1 & -1 \\
+1 & 4 & 0 \\
+-1& 0 & 2 
+\end{array}
+\right]$\newline
+\subsection{(h-2-32)}
+Find Cov($B*X^{[2]}$) = $B$ *  $\Sigma_{22}$ * $B'$ = $\left[
+\begin{array}{ccc}
+1 & 1 &1 \\
+1 & 1 &-2 
+\end{array}
+\right]
+$*$\left[ 
+\begin{array}{ccc}
+6 & 1 & -1 \\
+1 & 4 & 0 \\
+-1& 0 & 2 
+\end{array}
+\right]$* $\left[
+\begin{array}{cc}
+1 & 1 \\ 
+1 &1 \\
+1 &-2 
+\end{array}
+\right]
+$ = $\left[ 
+\begin{array}{cc}
+12 & 9 \\
+9 & 24
+\end{array}
+\right]$\newline
+\subsection{(i-2-32)}
+Find Cov($X^{[1]},X^{[2]}$) = $ \Sigma_{12}$ = $ \Sigma_{21}'$ = $\left[
+\begin{array}{ccc}
+1/2 & -1/2 & 0 \\
+1 & -1 & 0 
+\end{array}
+\right]$ \newline  
+\subsection{(j-2-32)}
+Find Cov($AX^{[1]},BX^{[2]}$) =  $A$*$ \Sigma_{12}$*$B`$ = $\left[
+\begin{array}{cc}
+1 & -1 \\
+1 & 1
+\end{array}
+\right]
+$*$\left[
+\begin{array}{ccc}
+1/2 & -1/2 & 0 \\
+1 & -1 & 0 
+\end{array}
+\right]$ * $\left[
+\begin{array}{cc}
+1 & 1 \\ 
+1 &1 \\
+1 &-2 
+\end{array}
+\right]
+$ = 
+$\left[
+\begin{array}{cc}
+0 & 0 \\
+0 & 0
+\end{array}
+\right]
+$\newline
+\section{Question 18 in Chapter 3.}
+\subsection{a-3-18}
+The consumption of energy is modeled as follow \newline
+$Y= X{1} + X{2}+ X{3} + X{4}$\newline
+The mean vector of the is listed in the question\newline 
+$\overline{X}= \left[
+\begin{array}{c}
+0.776 \\
+0.508\\
+0.438\\ 
+0.161
+\end{array}
+\right]$\newline
+The sample mean is calculated as follow\newline
+$\overline{Y}= \left[ 
+\begin{array}{cccc}
+1&1&1&1 
+\end{array}
+\right] * \left[
+\begin{array}{c}
+0.776 \\
+0.508\\
+0.438\\ 
+0.161
+\end{array}
+\right]
+= 0.777 + 0.508 + 0.438 + 0.161 = 1.873 $\newline 
+The sample Variance is calculated as follow \newline
+$S{y} = \left[ 
+\begin{array}{cccc}
+1&1&1&1 
+\end{array}
+\right] * S * \left [
+\begin{array}{c} 
+1\\
+1\\ 
+1\\ 
+1
+\end{array}
+\right]=\left[ 
+\begin{array}{cccc} 
+1.76 & 1.397 & 0.511 & 0. 245 
+\end{array}
+\right] *\left [
+\begin{array}{c} 
+1\\
+1\\ 
+1\\ 
+1
+\end{array}
+\right]= 1.76 + 1.397 + 0.511 + 0.245 = 3.913.$ 
+\subsection{b-3-18}
+To determine the excess of the petroleum consumption over natural gas we need to reconstruct the model in such 
+\newline 
+$Z = X{1} - X{2}$
+The sample mean of Z is calculated by replacing the vector used in question above by\newline
+$ \left [
+\begin{array}{c} 
+1\\-1\\0\\0\end{array}\right]$ \newline 
+$\overline{Z}=  \left [
+\begin{array}{c} 
+1\\-1\\0\\0\end{array}\right] * \left[
+\begin{array}{c}
+0.776 \\
+0.508\\
+0.438\\ 
+0.161
+\end{array}
+\right] = 0.776 - 0.508 = 0.258 $ \newline
+Using the same argument as the first part of the question we can calculate the sample variance of Z as follow.\newline
+$S{Z} = \left[ 
+\begin{array}{cccc}
+1&-1&0&0 
+\end{array}
+\right] * S * \left [
+\begin{array}{c} 
+1\\
+-1\\ 
+0\\ 
+0
+\end{array}
+\right]=\left[ 
+\begin{array}{cccc} 
+0.221 & 0.067 & 0.045 & 0. 029 
+\end{array}
+\right] *\left [
+\begin{array}{c} 
+1\\
+-1\\ 
+0\\ 
+0
+\end{array}
+\right]= 0.221 - 0.067 + 0 + 0 = 0.154 .$\newline
+To calculate the Variance-covariance for Z within Y .....
+$Cov(z,y)=  \left[ 
+\begin{array}{cccc}
+1&-1&0&0 
+\end{array}
+\right] * S *  \left [
+\begin{array}{c} 
+1\\
+1\\ 
+1\\ 
+1
+\end{array}
+\right] = \left[ 
+\begin{array}{cccc} 
+0.221 & 0.067 & 0.045 & 0. 029 
+\end{array}
+\right] *  \left [
+\begin{array}{c} 
+1\\
+1\\ 
+1\\ 
+1
+\end{array}
+\right] = 0.221 + 0.067 + 0.045 + 0.029 = 0.362$
+\section{Question 4.16}
+Let $\boldsymbol{X}_{1}$, $\boldsymbol{X}_2$. $\boldsymbol{X}_3$ and $\boldsymbol{X}_4$ be independent $N_p(\mu, \Sigma)$ random vectors. \\ \\
+\subsection{a}
+Find the marginal distributions for each of the random vectors $$ V_1 = \frac{1}{4}\boldsymbol{X}_1 - \frac{1}{4}\boldsymbol{X}_2 + \frac{1}{4}\boldsymbol{X}_3 - \frac{1}{4}\boldsymbol{X}_4$$
+and
+$$ V_2 = \frac{1}{4}\boldsymbol{X}_1 + \frac{1}{4}\boldsymbol{X}_2 - \frac{1}{4}\boldsymbol{X}_3 - \frac{1}{4}\boldsymbol{X}_4$$
+\\
+Solution / Motivation: \\
+Using Result 4.8 (page 165), for $\boldsymbol{V}_1$ we get $c_1 = c_3 = \frac{1}{4}$ and $c_2 = c_4 = -\frac{1}{4}$. Setting $\mu_j = \mu$ for $j = 1, \dots, 4$ we can use $\sum^{4}_{j=1}c_j\mu_j = 0$ and $\sum^{4}_{j=1}c_j^2\Sigma = \frac{1}{4}\Sigma$. This gives us $\boldsymbol{V}_1 = (0, \frac{1}{4}\Sigma)$. \\
+For $\boldsymbol{V}_2$ we get $b_1 = b_2 = \frac{1}{4}$ and $b_3 = b_4 = -\frac{1}{4}$. We can then use $\sum^{4}_{j=1}b_j\mu_j = 0$ and $\sum^{4}_{j=1}b_j^2\Sigma \sim \frac{1}{4}\Sigma$. This gives us $\boldsymbol{V}_2 \sim (0, \frac{1}{4}\Sigma)$. \\
+Answer: \\
+$\boldsymbol{V}_1 \sim (0, \frac{1}{4}\Sigma)$ \\
+$\boldsymbol{V}_2 \sim (0, \frac{1}{4}\Sigma)$
+\subsection{b}
+Find the joint density of the random vectors $\boldsymbol{V}_1$ and $\boldsymbol{V}_2$ defined in $\boldsymbol{a}$. \\ \\
+Solution / Motivation: \\
+Again, using Result 4.8 (page 165) we have that $\boldsymbol{V}_1$ and $\boldsymbol{V}_2$ are jointly multivariate normal and that $(\sum_{j=1}^{4} = b_{j}c_{j})\Sigma = (\frac{1}{4}*\frac{1}{4}+\frac{-1}{4}*\frac{1}{4}+\frac{1}{4}*\frac{-1}{4}+\frac{-1}{4}*\frac{-1}{4})\Sigma = 0$. \\
+Thus $
+    \begin{bmatrix}
+    \boldsymbol{V}_1 \\
+    \boldsymbol{V}_2
+    \end{bmatrix}$ is distributed by $N_{2p} = (0,
+    \begin{bmatrix}
+    \frac{1}{4}\Sigma & 0 \\
+    0 & \frac{1}{4}\Sigma
+    \end{bmatrix})$. \\
+    We can then use definition $4-4$ (page 150) which gives us following equation \\
+    $f(v1, v2) = $
+    \begin{equation*}
+\begin{split}
+f(v1, v2) & = \frac{1}{(2\pi)^{\frac{p}{2}}\begin{vmatrix}
+\Sigma
+\end{vmatrix}^{\frac{1}{2}}} * exp(-(\boldsymbol{x}-\boldsymbol{\mu})^{T}\Sigma^{-1}({\boldsymbol{x} - \boldsymbol{\mu})/2} \\
+ & = \frac{1}{(2\pi)^{p}\begin{vmatrix}
+\frac{1}{4}\Sigma
+\end{vmatrix}} * exp(-\frac{1}{2}(\boldsymbol{x}-\boldsymbol{\mu})^{T}\Sigma^{-1}({\boldsymbol{x} - \boldsymbol{\mu})/2}
+\end{split}
+\end{equation*}
+\end{document}
